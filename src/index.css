@@ -1,0 +1,61 @@
+:root {
+  --ink: #ffe6a8;
+  --ink-dim: #c9a45c;
+  --muted: #8f7340;
+  --bg: #140e08;
+  --panel: #1c140c;
+  --line: #5c3d14;
+  --accent: #ffb000;
+  --accent-hot: #ff6a00;
+  --phosphor: #ffcc66;
+  --online: #4dff7a;
+  --sky-deep: #0a1218;
+  --sky-mid: #1a2830;
+  --pixel-teal: #3dd9a0;
+  --pixel-coral: #e85d4c;
+
+  --pixel: 'Press Start 2P', monospace;
+  --terminal: 'VT323', monospace;
+
+  color-scheme: dark;
+  font-family: var(--terminal);
+  font-size: 22px;
+  line-height: 1.35;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  image-rendering: pixelated;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100svh;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+a {
+  color: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
